@@ -1,0 +1,31 @@
+class car 
+{
+    constructor(color,year,no_of_wheels,AC)  //method
+    {
+        this.color=color; //attrtibutes = parameter
+        this.year=year;
+        this.no_of_wheels=no_of_wheels;
+        this.AC=AC;
+    }
+    running()   //function type 1
+    {
+        console.log("Hii your car color " + this.color);
+    }
+    km()      //function type 1
+    {
+        console.log("Avg KM is");
+    }
+    get_no_years = function(x)     // function type 2
+    {
+        console.log(x-this.year);
+    }
+}
+
+let maruti = new car("white",2000,4,"yes");
+console.log("Maruti details " + "1 "+ maruti.color,"2 " +maruti.AC);
+maruti.running();
+maruti.get_no_years(2023);
+
+//let safari = new car("goldn_white",2023,4);
+//console.log(safari.color,safari.year);
+//safari.km();
