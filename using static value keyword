@@ -1,0 +1,18 @@
+class college {
+    static college_name = "IIT";
+    constructor(cgpa,passout_year){
+        this.cgpa=cgpa;
+        this.passout_year=passout_year;
+
+    }
+}
+
+let bhushan = new college(8.54,2021)
+console.log(bhushan.cgpa,bhushan.passout_year);
+// how to call static value
+//console.log(college.college_name);
+// but after 2 years college_name is changed then college_name for every student must be changed
+
+college.college_name="IIT BOMBAY" // here we changed college_name once because collage_name is static value 
+                                  // we dont need to change for every object i.e student name
+console.log(college.college_name);
